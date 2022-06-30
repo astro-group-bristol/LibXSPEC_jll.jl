@@ -1,0 +1,10 @@
+[[LibXSPEC]]
+arch = "x86_64"
+git-tree-sha1 = "a2657e3c791d926b1d9ce18c0d608ed844779b91"
+libc = "glibc"
+libgfortran_version = "5.0.0"
+os = "linux"
+
+    [[LibXSPEC.download]]
+    sha256 = "8f4464c9a8b63d2ca5fc1a42288433f6cec37ae21dcfb6b6f9d1004714c9e391"
+    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.6+0/LibXSPEC.v0.1.6.x86_64-linux-gnu-libgfortran5.tar.gz"
