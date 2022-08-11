@@ -8,3 +8,47 @@ os = "linux"
     [[LibXSPEC.download]]
     sha256 = "8f4464c9a8b63d2ca5fc1a42288433f6cec37ae21dcfb6b6f9d1004714c9e391"
     url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.6+0/LibXSPEC.v0.1.6.x86_64-linux-gnu-libgfortran5.tar.gz"
+[[LibXSPEC]]
+arch = "x86_64"
+cxxstring_abi = "cxx03"
+git-tree-sha1 = "87a3d5ab9187fbceebb3f6aa7a814fb25c481041"
+libc = "glibc"
+libgfortran_version = "4.0.0"
+os = "linux"
+
+    [[LibXSPEC.download]]
+    sha256 = "a2d6a2e05720b0f136956422d5796204994ee059ccd4c7cbfdd3ece673808174"
+    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.8+0/LibXSPEC.v0.1.8.x86_64-linux-gnu-libgfortran4-cxx03.tar.gz"
+[[LibXSPEC]]
+arch = "x86_64"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "ea48a31fe74da7c2d13aa3316a1fca44af458361"
+libc = "glibc"
+libgfortran_version = "4.0.0"
+os = "linux"
+
+    [[LibXSPEC.download]]
+    sha256 = "04f5fd451ed3b1f9e0631f73ce7c775970b4e19de0f7d56ff363b1f48c4a3e2a"
+    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.8+0/LibXSPEC.v0.1.8.x86_64-linux-gnu-libgfortran4-cxx11.tar.gz"
+[[LibXSPEC]]
+arch = "x86_64"
+cxxstring_abi = "cxx03"
+git-tree-sha1 = "87e957cfbb356289a5aba394cb9253f00317e0ac"
+libc = "glibc"
+libgfortran_version = "5.0.0"
+os = "linux"
+
+    [[LibXSPEC.download]]
+    sha256 = "b4584838abe6867aad09c893a4184194d5e451a409a743562893efdc75d17bc7"
+    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.8+0/LibXSPEC.v0.1.8.x86_64-linux-gnu-libgfortran5-cxx03.tar.gz"
+[[LibXSPEC]]
+arch = "x86_64"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "e7b57429757c57a35c6ffc2a69296684b600de2c"
+libc = "glibc"
+libgfortran_version = "5.0.0"
+os = "linux"
+
+    [[LibXSPEC.download]]
+    sha256 = "36e5b723377bb5e221675c7a7ee66decce4a21d63f81d547c725b9a6fd1f9856"
+    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.8+0/LibXSPEC.v0.1.8.x86_64-linux-gnu-libgfortran5-cxx11.tar.gz"
