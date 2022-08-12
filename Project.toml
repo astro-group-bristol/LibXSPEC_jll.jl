@@ -1,6 +1,6 @@
 name = "LibXSPEC_jll"
 uuid = "50917eeb-3e3c-5f3a-99bd-93e1c30e1561"
-version = "0.1.9+0"
+version = "0.1.10+0"
 
 [deps]
 JLLWrappers = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
