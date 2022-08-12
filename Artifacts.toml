@@ -54,10 +54,10 @@ os = "linux"
     url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.9+0/LibXSPEC.v0.1.9.x86_64-linux-gnu-libgfortran5-cxx11.tar.gz"
 [[LibXSPEC]]
 arch = "aarch64"
-git-tree-sha1 = "bc6921a593e01aef0a16515f4cd546e744b93130"
+git-tree-sha1 = "e88abcc4303dc66dbc897d234f4c7a5b48fd3dd1"
 libgfortran_version = "5.0.0"
 os = "macos"
 
     [[LibXSPEC.download]]
-    sha256 = "aa4b3ac5eafd3be84af575fc7f1c6228c5014789e8c0eef2aaafc549f394a9d1"
+    sha256 = "a16b7db94af72ac2d7ad70fc2f6ddfc9846f877d4aa84f7a55885081c8fdbc54"
     url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.10+0/LibXSPEC.v0.1.10.aarch64-apple-darwin-libgfortran5.tar.gz"

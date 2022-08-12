@@ -2,6 +2,7 @@
 export libXS, libXSFunctions, libXSUtil
 
 using CompilerSupportLibraries_jll
+using libblastrampoline_jll
 using Ncurses_jll
 using Zlib_jll
 JLLWrappers.@generate_wrapper_header("LibXSPEC")
@@ -9,7 +10,7 @@ JLLWrappers.@declare_library_product(libXS, "@rpath/libXS.dylib")
 JLLWrappers.@declare_library_product(libXSFunctions, "@rpath/libXSFunctions.dylib")
 JLLWrappers.@declare_library_product(libXSUtil, "@rpath/libXSUtil.dylib")
 function __init__()
-    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, Ncurses_jll, Zlib_jll)
+    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, libblastrampoline_jll, Ncurses_jll, Zlib_jll)
     JLLWrappers.@init_library_product(
         libXS,
         "lib/libXS.dylib",

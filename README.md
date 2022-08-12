@@ -25,6 +25,7 @@ The following JLL packages are required by `LibXSPEC_jll.jl`:
 * `CompilerSupportLibraries_jll`
 * `Ncurses_jll`
 * `Zlib_jll`
+* `libblastrampoline_jll`
 
 ## Products
 
