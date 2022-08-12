@@ -9,50 +9,6 @@ os = "linux"
     sha256 = "8f4464c9a8b63d2ca5fc1a42288433f6cec37ae21dcfb6b6f9d1004714c9e391"
     url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.6+0/LibXSPEC.v0.1.6.x86_64-linux-gnu-libgfortran5.tar.gz"
 [[LibXSPEC]]
-arch = "x86_64"
-cxxstring_abi = "cxx03"
-git-tree-sha1 = "9ee2bc572df64bf5898f7b03ff6faca0a9365618"
-libc = "glibc"
-libgfortran_version = "4.0.0"
-os = "linux"
-
-    [[LibXSPEC.download]]
-    sha256 = "e8c05723a630aa2b38518dcab054629c178f07f8d18ffb77380e567774ae11ec"
-    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.9+0/LibXSPEC.v0.1.9.x86_64-linux-gnu-libgfortran4-cxx03.tar.gz"
-[[LibXSPEC]]
-arch = "x86_64"
-cxxstring_abi = "cxx11"
-git-tree-sha1 = "8570de7b6c92f74f6b25d1331fd08e8b5daf6a63"
-libc = "glibc"
-libgfortran_version = "4.0.0"
-os = "linux"
-
-    [[LibXSPEC.download]]
-    sha256 = "94b4c4df0145d784b1b4bc495165eb156a6cc25220dcfd02cb38edb14900aaa3"
-    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.9+0/LibXSPEC.v0.1.9.x86_64-linux-gnu-libgfortran4-cxx11.tar.gz"
-[[LibXSPEC]]
-arch = "x86_64"
-cxxstring_abi = "cxx03"
-git-tree-sha1 = "8986c156e25c0e70ae587671f8a7b8e779000d4c"
-libc = "glibc"
-libgfortran_version = "5.0.0"
-os = "linux"
-
-    [[LibXSPEC.download]]
-    sha256 = "374695dc9aeae922ac18004e9b9243e004d7f836c5c47c125ccfb44f2bc94b12"
-    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.9+0/LibXSPEC.v0.1.9.x86_64-linux-gnu-libgfortran5-cxx03.tar.gz"
-[[LibXSPEC]]
-arch = "x86_64"
-cxxstring_abi = "cxx11"
-git-tree-sha1 = "6cf79e5b78d4fd8dad45d18cf925d46982f7d4a6"
-libc = "glibc"
-libgfortran_version = "5.0.0"
-os = "linux"
-
-    [[LibXSPEC.download]]
-    sha256 = "f5ca3292e8bfcd4ed4b5c0088d53c67ba298352170172a93ac9183cae608a7fd"
-    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.9+0/LibXSPEC.v0.1.9.x86_64-linux-gnu-libgfortran5-cxx11.tar.gz"
-[[LibXSPEC]]
 arch = "aarch64"
 git-tree-sha1 = "55799595f1dd6c2752fed735db0a3bbb82b79e34"
 libgfortran_version = "5.0.0"
@@ -61,3 +17,47 @@ os = "macos"
     [[LibXSPEC.download]]
     sha256 = "a7a92626ef30e819e76192234f726ef0f46b4fcf529cdd9177fbda2233d6623c"
     url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.13+0/LibXSPEC.v0.1.13.aarch64-apple-darwin-libgfortran5.tar.gz"
+[[LibXSPEC]]
+arch = "x86_64"
+cxxstring_abi = "cxx03"
+git-tree-sha1 = "9191cb22613d85c1f8895166f0be61127eba9481"
+libc = "glibc"
+libgfortran_version = "4.0.0"
+os = "linux"
+
+    [[LibXSPEC.download]]
+    sha256 = "2d0c0a1164370adbf26065d5a8c3a409aa40e4a10d1389d3e208835a60147e14"
+    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.14+0/LibXSPEC.v0.1.14.x86_64-linux-gnu-libgfortran4-cxx03.tar.gz"
+[[LibXSPEC]]
+arch = "x86_64"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "20ce98a9478e5aa61c6e48237f070ad1bebe11a5"
+libc = "glibc"
+libgfortran_version = "4.0.0"
+os = "linux"
+
+    [[LibXSPEC.download]]
+    sha256 = "1a1162c900a3ec81d5bd6ed50f36a620edaf652aa7fe3f78dc20bdcf4750627f"
+    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.14+0/LibXSPEC.v0.1.14.x86_64-linux-gnu-libgfortran4-cxx11.tar.gz"
+[[LibXSPEC]]
+arch = "x86_64"
+cxxstring_abi = "cxx03"
+git-tree-sha1 = "e2112dd464cc4b9d1e9bdd410c48b3198bd968b2"
+libc = "glibc"
+libgfortran_version = "5.0.0"
+os = "linux"
+
+    [[LibXSPEC.download]]
+    sha256 = "e29afc214d02eea032c3073af17d2e5497343df6a1e047a9a02cf91fe517be0c"
+    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.14+0/LibXSPEC.v0.1.14.x86_64-linux-gnu-libgfortran5-cxx03.tar.gz"
+[[LibXSPEC]]
+arch = "x86_64"
+cxxstring_abi = "cxx11"
+git-tree-sha1 = "864ae8cb0686a612d4860e625ed6b86d436f9f2a"
+libc = "glibc"
+libgfortran_version = "5.0.0"
+os = "linux"
+
+    [[LibXSPEC.download]]
+    sha256 = "992b7a1218c5a8d2c6ce3059649080f497e525dc118bb53ea989a100ea28c1b9"
+    url = "https://github.com/astro-group-bristol/LibXSPEC_jll.jl/releases/download/LibXSPEC-v0.1.14+0/LibXSPEC.v0.1.14.x86_64-linux-gnu-libgfortran5-cxx11.tar.gz"
