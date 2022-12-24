@@ -49,7 +49,8 @@ jobs:
         run: |
           cd ~/.julia/registries/AstroRegistry
           git checkout -b bot/libxspec_jll
-          git status
+          git log -n 1
+          git remote -v
           DEBUG=api gh pr create -B main -H bot/libxspec_jll \
             --title "New Version: LibXSPEC_jll" \
             --body "Automated pull request."
