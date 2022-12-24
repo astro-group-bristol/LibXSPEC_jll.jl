@@ -52,7 +52,7 @@ jobs:
           git log -n 4
           gh pr create -B main \
             --title "New Version: LibXSPEC_jll" \
-            --body "Automated pull request." \ 
-            --head bot/libxspec_jll
+            --body "Automated pull request." \
+            --head "bot/libxspec_jll"
         env:
             GITHUB_TOKEN: ${{ secrets.SECRET_PR_TOKEN }}
