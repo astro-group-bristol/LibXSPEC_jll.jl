@@ -40,11 +40,11 @@ jobs:
           Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/astro-group-bristol/AstroRegistry/"))
           register(pwd(), registry="AstroRegistry", push=false)
           '
-      - name: Push to registry
-        uses: repo-sync/pull-request@v2
-        with:
-          destination_repository: "astro-group-bristol/AstroRegistry"
-          destination_branch: "main"
-          pr_title: "New version: ${{ github.ref }}"
-          pr_body: "Automated pull request."
-
+      - name: create pull request
+        run: |
+          cd ~/.julia/registries/AstroRegistry
+          gh pr create -B base_branch -H branch_to_merge \
+            --title "New Version: LibXSPEC_jll" \
+            --body "Automated pull request."
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
