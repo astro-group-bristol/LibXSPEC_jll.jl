@@ -6,8 +6,8 @@ on:
       - main
       - "fergus/register"
 
-permissions:
-  pull-requests: write
+permissions: write-all
+
 
 jobs:
 
