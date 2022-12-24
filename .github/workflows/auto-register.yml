@@ -56,7 +56,7 @@ jobs:
         with:
           github_token: ${{ secrets.SECRET_PR_TOKEN }}
           repository: "astro-group-bristol/AstroRegistry"
-          directory: "../.julia/registries/AstroRegistry"
+          directory: "/home/runner/.julia/registries/AstroRegistry"
           branch: "bot/libxspec_jll"
       - name: Create pull request
         run: |
