@@ -6,11 +6,12 @@ on:
       - main
       - "fergus/register"
 
+permissions:
+  pull-requests: write
+
 jobs:
 
   autoregister:
-    permissions:
-      pull-requests: write
     name: Julia ${{ matrix.version }} - ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
