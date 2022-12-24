@@ -33,9 +33,9 @@ jobs:
       - run: |
           julia --project=. -e '
           import Pkg
-          Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/astro-group-bristol/AstroRegistry/"))
-          Pkg.add("LocalRegistry")
+          Pkg.add("https://github.com/GunnarFarneback/LocalRegistry.jl")
           using LocalRegistry
+          Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/astro-group-bristol/AstroRegistry/"))
           register(".", registry="AstroRegistry", push=true)
           '
 
