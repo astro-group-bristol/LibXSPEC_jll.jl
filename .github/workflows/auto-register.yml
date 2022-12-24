@@ -46,7 +46,8 @@ jobs:
       - name: create pull request
         run: |
           cd ~/.julia/registries/AstroRegistry
-          gh pr create -B base_branch -H branch_to_merge \
+          git checkout -b bot/libxspec_jll
+          gh pr create -B main -H bot/libxspec_jll \
             --title "New Version: LibXSPEC_jll" \
             --body "Automated pull request."
         env:
