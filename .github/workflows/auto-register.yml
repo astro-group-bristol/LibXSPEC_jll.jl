@@ -46,6 +46,7 @@ jobs:
           register(pwd(), registry="AstroRegistry", push=false)
           '
       - name: Create new branch
+        run: |
           cd ~/.julia/registries/AstroRegistry
           git checkout -b "bot/libxspec_jll"
           git log -n 4
