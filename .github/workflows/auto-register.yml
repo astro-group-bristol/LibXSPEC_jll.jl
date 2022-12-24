@@ -45,7 +45,7 @@ jobs:
           Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/astro-group-bristol/AstroRegistry/"))
           register(pwd(), registry="AstroRegistry", push=false)
           '
-      -name: Create new branch
+      - name: Create new branch
           cd ~/.julia/registries/AstroRegistry
           git checkout -b "bot/libxspec_jll"
           git log -n 4
