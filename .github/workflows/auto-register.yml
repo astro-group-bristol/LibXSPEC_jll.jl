@@ -6,8 +6,10 @@ on:
       - main
       - "fergus/register"
 
-permissions: write-all
-
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
 
 jobs:
 
