@@ -45,6 +45,12 @@ jobs:
           Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/astro-group-bristol/AstroRegistry/"))
           register(pwd(), registry="AstroRegistry", push=false)
           '
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.SECRET_PR_TOKEN }}
+          branch: ${{ github.ref }}
+          repository: "astro-group-bristol/AstroRegistry"
       - name: create pull request
         run: |
           cd ~/.julia/registries/AstroRegistry
