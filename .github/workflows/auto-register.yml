@@ -31,11 +31,21 @@ jobs:
             ${{ runner.os }}-test-
             ${{ runner.os }}-
       - run: |
+          git config --global user.email "bot@astro-group-bristol"
+          git config --global user.name "astro-group-bristol [bot]"
           julia -e '
           import Pkg
           Pkg.add(url="https://github.com/GunnarFarneback/LocalRegistry.jl")
           using LocalRegistry
           Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/astro-group-bristol/AstroRegistry/"))
-          register(pwd(), registry="AstroRegistry", push=true)
+          register(pwd(), registry="AstroRegistry", push=false)
           '
+      - name: Push to registry
+        uses: paygoc6/action-pull-request-another-repo@v1.0.1
+        with:
+          uses: repo-sync/pull-request@v2
+          destination_repo: "astro-group-bristol/AstroRegistry"
+          destination_branch: "main"
+          pr_title: "New version: ${{ github.ref }}"
+          pr_body: "Automated pull request."
 
