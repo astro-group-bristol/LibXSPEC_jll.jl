@@ -54,7 +54,6 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.SECRET_PR_TOKEN }}
-          branch: ${{ github.ref }}
           repository: "astro-group-bristol/AstroRegistry"
           directory: "~/.julia/registries/AstroRegistry"
           branch: "bot/libxspec_jll"
