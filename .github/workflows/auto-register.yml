@@ -31,7 +31,7 @@ jobs:
             ${{ runner.os }}-test-
             ${{ runner.os }}-
       - run: |
-          julia --project=. -e '
+          julia -e '
           import Pkg
           Pkg.add(url="https://github.com/GunnarFarneback/LocalRegistry.jl")
           using LocalRegistry
