@@ -41,9 +41,8 @@ jobs:
           register(pwd(), registry="AstroRegistry", push=false)
           '
       - name: Push to registry
-        uses: paygoc6/action-pull-request-another-repo@v1.0.1
+        uses: repo-sync/pull-request@v2
         with:
-          uses: repo-sync/pull-request@v2
           destination_repo: "astro-group-bristol/AstroRegistry"
           destination_branch: "main"
           pr_title: "New version: ${{ github.ref }}"
