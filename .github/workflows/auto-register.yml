@@ -1,10 +1,9 @@
-name: Test
+name: Auto-register
 
 on:
   push:
     branches:
       - main
-      - "fergus/register"
 
 permissions:
   contents: read
@@ -48,9 +47,7 @@ jobs:
       - name: Create new branch
         run: |
           cd ~/.julia/registries/AstroRegistry
-          pwd
           git checkout -b "bot/libxspec_jll"
-          git log -n 4
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
