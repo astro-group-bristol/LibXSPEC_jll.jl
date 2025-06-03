@@ -8,7 +8,7 @@ JLLWrappers.@generate_wrapper_header("LibXSPEC")
 JLLWrappers.@declare_library_product(libXS, "@rpath/libXS.dylib")
 JLLWrappers.@declare_library_product(libXSFunctions, "@rpath/libXSFunctions.dylib")
 JLLWrappers.@declare_library_product(libXSUtil, "@rpath/libXSUtil.dylib")
-JLLWrappers.@declare_library_product(libcfitsio, "@rpath/libcfitsio.9.dylib")
+JLLWrappers.@declare_library_product(libcfitsio, "@rpath/libcfitsio.10.dylib")
 JLLWrappers.@declare_library_product(libfgsl, "@rpath/libfgsl.1.dylib")
 JLLWrappers.@declare_library_product(libreadline, "@rpath/libreadline.8.dylib")
 function __init__()
@@ -33,7 +33,7 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libcfitsio,
-        "lib/libcfitsio.9.dylib",
+        "lib/libcfitsio.10.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
@@ -45,7 +45,7 @@ function __init__()
 
     JLLWrappers.@init_library_product(
         libreadline,
-        "lib/libreadline.8.0.dylib",
+        "lib/libreadline.8.2.dylib",
         RTLD_LAZY | RTLD_DEEPBIND,
     )
 
