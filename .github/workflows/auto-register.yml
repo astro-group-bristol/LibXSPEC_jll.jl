@@ -17,14 +17,14 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        julia-version: ['1.8']
+        julia-version: ['1.11']
         os: [ubuntu-latest]
     steps:
-      - uses: actions/checkout@v2
-      - uses: julia-actions/setup-julia@v1
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@v2
         with:
           version: ${{ matrix.julia-version }}
-      - uses: actions/cache@v1
+      - uses: actions/cache@v4
         env:
           cache-name: cache-artifacts
         with:
@@ -35,8 +35,8 @@ jobs:
             ${{ runner.os }}-test-
             ${{ runner.os }}-
       - run: |
-          git config --global user.email "bot@astro-group-bristol"
-          git config --global user.name "astro-group-bristol[bot]"
+          git config --global user.email "isamborg@cosroe.com"
+          git config --global user.name "Isamborg"
           julia -e '
           import Pkg
           Pkg.add(url="https://github.com/GunnarFarneback/LocalRegistry.jl")
